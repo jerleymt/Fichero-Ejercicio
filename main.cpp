@@ -4,6 +4,7 @@
 #include<stdio.h>
 #include<fstream>
 using namespace std;
+string limpiar="clear";
 
 //Decalaracion de mis funciones
 void menu(),Crear(), Leer(), Escribir();
