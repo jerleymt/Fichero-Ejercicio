@@ -4,7 +4,7 @@
 #include<stdio.h>
 #include<fstream>
 using namespace std;
-string limpiar="clear";
+const char limpiar[5]="cls";
 
 //Decalaracion de mis funciones
 void menu(),Crear(), Leer(), Escribir();
@@ -32,7 +32,7 @@ string extension(){
 }
 //Menu principal de mi programa
 void menu(){
-  system("clear");
+  system(limpiar);
   int opcion;
   cout<<"\n\n1) Crear un nuevo archivo"<<endl;
   cout<<"2) Ver archivos creados"<<endl;
@@ -54,7 +54,7 @@ void menu(){
 }
 
 void Escribir(){
-  system("clear");
+  system(limpiar);
   ofstream doc1;
   string nombre;
   string texto;
@@ -74,7 +74,7 @@ void Escribir(){
   menu();
 }
 void Crear(){
-  system("clear");
+  system(limpiar);
   ofstream doc;
   string nombre,estencion,texto;
 
@@ -93,7 +93,7 @@ void Crear(){
   menu();
 }
 void Leer(){
-  system("clear");
+  system(limpiar);
   ofstream doc;
   cout<<"Esta oopcion aun no esta diponible"<<endl;
   cin.ignore();
