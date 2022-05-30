@@ -17,6 +17,7 @@ int main(){
 }
 //Me permite escoger la extension de un fichero.
 string extension(){
+  system(limpiar);
   string ex;
   int est;
   cout<<"\nIngrese la extencion "<<endl;
@@ -34,7 +35,8 @@ string extension(){
 void menu(){
   system(limpiar);
   int opcion;
-  cout<<"\n\n1) Crear un nuevo archivo"<<endl;
+  cout<<"\n\n  MENU PRINCIPAL"<<endl;
+  cout<<"\n1) Crear un nuevo archivo"<<endl;
   cout<<"2) Ver archivos creados"<<endl;
   cout<<"3) agrgar informacion a un ficheero"<<endl;
   cout<<"4) Salir"<<endl;
