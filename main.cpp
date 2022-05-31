@@ -32,7 +32,7 @@ string extension(){
   return ex;
 }
 //Menu principal de mi programa
-void menu(){
+void menu(){ 
   system(limpiar);
   int opcion;
   cout<<"\n\n  MENU PRINCIPAL"<<endl;
